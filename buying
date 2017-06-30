@@ -14,7 +14,7 @@ div {
   background-size: cover;
   position: relative;
   margin: 40px 0 0 0;
-  border-radius: 12px;
+  border-radius: 3px;
 }
 h1 {
   font-family: 'Pangolin', cursive;
@@ -58,14 +58,14 @@ small {
   opacity: 1;
 }
 
-.first{
+.oculus{
   background-image: url("https://www.heliguy.com/blog/wp-content/uploads/2017/05/Heliguy-DJI_Spark-1000x523.png");
 }
-.second{
+.vive{
   background-image: url("https://i.ytimg.com/vi/4xGAAjJkxxE/maxresdefault.jpg");
   background-position: center;
 }
-.dessert{
+.psvr{
   background-image: url("https://i.ytimg.com/vi/SASYABAPE50/maxresdefault.jpg");
 }
 .price {
@@ -100,19 +100,19 @@ small {
 <body>
 <h1>Zhang's flying world</h1>
 <h2>a drone superstore</h2>
-<div class="first">
-  <p>Entry Level <span class="price">$499</span><br />
-  <small>DJI Spark is a new coming entry level prsonal drone. Perfect for travel carry and indoor photo taking. </small></p>
+<div class="oculus">
+  <p>You can have your real working hand in different incredible worlds <span class="price">$599</span><br />
+  <small>Oculus is the first company annonced their vr headset in the market and, their consumer version "Rift" featured a pair of controller which can represent human hand in the games. You can move and doing things with your virtual hands in game with a few different in real life.</small></p>
 </div>
 
-<div class="second">
-  <p>Medium Level <span class="price">$999</span><br />
-  <small>DJI Mavic Pro is the most popular quadquapter in the market nowadays. It has 3-axis gimbal with 4k resolution. And perfect fly ability.</small></p>
+<div class="vive">
+  <p>Amazing tracking system let you fly in the game! <span class="price">$599</span><br />
+  <small>HTC Vive featured an amazing full-room-scale tracking system so players can move a lot, even play tennis.</small></p>
 </div>
   
-<div class="dessert">
-  <p>Professional level <span class="price">$1499</span><br />
-  <small>DJI Phatom 4 Pro is the top choise nowadays by those professonal photogrpher and film taker. Its perfect flying ability and incredible shooting quality can help you make amazing pictures.</small></p>
+<div class="psvr">
+  <p>Play your favourite PS4 games in virtual reality!  <span class="price">$499</span><br />
+  <small>PSVR is a very nice "extender" for your PS4 console. It can leads you step in some of your favourite games and gives you a totally different feeling.</small></p>
 </div>
 
 <script>
