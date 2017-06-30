@@ -31,10 +31,11 @@
       padding: 0px 10px 0px 10px;
     }
     article {
-      background: red;
-      max-width: 500px;
-      padding: 20px;
+      background: rgba(158,158,221,1.00);
+      max-width: 1000px;
+      padding: 50px;
       margin: 0 auto;
+	  text-align: right;
     }
     @media (max-width: 500px) {
       h1 {
@@ -47,7 +48,7 @@
       }
     }
     body {
-      background: orange;
+      background: rgba(60,220,223,1.00);
       color: white;
     }
   </style>
@@ -58,24 +59,29 @@
     <ul>
       <li><a href="#">Main</a></li>
       <li><a href="#">What is VR</a></li>
-      <li><a href="#">Buying Guide</a></li>
+      <li><a href="https://zshfreedom.github.io/mi349su17/buying.html">Buying Guide</a></li>
       <li><a href="#">About</a></li>
     </ul>
   </header>
+  <QuickGuide>
+	</QuickGuide>
   <article>
-    <h2>Getting new drone!</h2>
-    <p>The new DJI spark is coming out! Let's go get one!</p>
-    <button>Like</button>
+	  <h1> Quick Survey</h1>
+    <h2>Do you like Virtual Reality?</h2>
+    <button>Of course!</button>
+    <button>Nay</button>
   </article>
   <article>
-    <h2>DJI Mavic Pro review</h2>
-    <p>Hi everyone! Here is the review for MAVIC!<br>bla<br>bla<br>bla</p>
-    <button>Like</button>
+    <h2>Have you even Tried them on?</h2>
+    <button>Yeah!</button>
+    <button>Nay</button>
   </article>
   <article>
-    <h2>New here!</h2>
-    <p>Hi this is my first blog here! So exciting!</p>
-    <button>Like</button>
+	  <h2>How's your budget planning on purchasing VR device?</h2>
+    <button>Under 100</button>
+    <button>100 -- 300</button>
+	<button>300 -- 600</button>
+	<button>600+</button>
   </article>
   <script>
     $("button").on("click", function() {
