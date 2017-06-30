@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<head>
+<script src="/assets/jquery.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #232323;
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Pangolin', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: #aaaaaa;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: #bbbbbb;
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("https://www.heliguy.com/blog/wp-content/uploads/2017/05/Heliguy-DJI_Spark-1000x523.png");
+}
+.second{
+  background-image: url("https://i.ytimg.com/vi/4xGAAjJkxxE/maxresdefault.jpg");
+  background-position: center;
+}
+.dessert{
+  background-image: url("https://i.ytimg.com/vi/SASYABAPE50/maxresdefault.jpg");
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>Zhang's flying world</h1>
+<h2>a drone superstore</h2>
+<div class="first">
+  <p>Entry Level <span class="price">$499</span><br />
+  <small>DJI Spark is a new coming entry level prsonal drone. Perfect for travel carry and indoor photo taking. </small></p>
+</div>
+
+<div class="second">
+  <p>Medium Level <span class="price">$999</span><br />
+  <small>DJI Mavic Pro is the most popular quadquapter in the market nowadays. It has 3-axis gimbal with 4k resolution. And perfect fly ability.</small></p>
+</div>
+  
+<div class="dessert">
+  <p>Professional level <span class="price">$1499</span><br />
+  <small>DJI Phatom 4 Pro is the top choise nowadays by those professonal photogrpher and film taker. Its perfect flying ability and incredible shooting quality can help you make amazing pictures.</small></p>
+</div>
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>
